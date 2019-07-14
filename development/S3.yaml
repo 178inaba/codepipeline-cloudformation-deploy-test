@@ -4,6 +4,9 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       AccessControl: Private
+      Tags:
+        - Key: testKey
+          Value: testValue
 Outputs:
   BucketName:
     Value: !Ref 'S3Bucket'
